@@ -1,0 +1,450 @@
+/*
+Theme Name: Life Potolog
+Theme URI: http://www.prime-strategy.co.jp/download/
+Description: 
+Author: Prime Strategy Co.,Ltd.
+Author URI: http://prime-strategy.co.jp/
+Template: twentythirteen
+Version: 1.0
+*/
+
+@import url("../twentythirteen/style.css");
+
+body {
+  font-family:
+      "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
+      メイリオ, Meiryo,
+      Osaka,
+      "ＭＳ Ｐゴシック", "MS PGothic",
+      sans-serif;
+}
+
+body * {
+  font-family: inherit !important;
+  font-style: normal !important;
+}
+
+#masthead .site-title {
+  font-size: 48px;
+}
+
+#masthead .site-description {
+  font-size: 18px;
+}
+
+#content > header h1,
+#content article .entry-title,
+#comments .comments-title,
+#reply-title {
+  font-size: 28px;
+}
+
+@media (max-width: 767px) {
+  
+  #masthead .site-title {
+    font-size: 42px;
+  }
+  
+  #masthead .site-description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 643px) {
+  
+  #masthead .site-title {
+    font-size: 28px;
+  }
+  
+  #content > header h1,
+  #content article .entry-title,
+  #comments .comments-title,
+  #reply-title {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 479px) {
+  
+  #masthead .site-title {
+    font-size: 19px;
+  }
+  
+  #masthead .site-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 359px) {
+  #masthead .site-description {
+    font-size: 11px;
+  }
+  
+  #content > header h1,
+  #content article .entry-title,
+  #comments .comments-title,
+  #reply-title {
+    font-size: 18px;
+  }
+}
+
+#content article .entry-title,
+#secondary .widget .widget-title,
+#tertiary .widget .widget-title {
+  font-weight: bold;
+}
+
+body {
+  background-color: #666;
+}
+
+#page,
+#content > header,
+#content article,
+#content article .entry-content,
+#content .page-wrapper,
+#content .post-navigation,
+#respond,
+#colophon,
+#tertiary .widget_calendar:first-child,
+#tertiary .widget_calendar tbody td.pad {
+  background: none;
+}
+
+#page:before {
+  content: "\a0";
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/life-photolog.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+#navbar,
+#content .paging-navigation .meta-nav {
+  background-color: #7A5131;
+}
+
+#navbar .nav-menu li a,
+#navbar .menu-toggle,
+#secondary,
+#secondary .widget_calendar td > a:hover,
+#tertiary .widget_calendar td > a:hover,
+#colophon .site-info a {
+  color: #fff;
+}
+
+@media (max-width: 643px) {
+  #navbar .nav-menu li.current-menu-item a {
+    color: #666;
+  }
+}
+
+@media (min-width: 643px) {
+  #navbar .nav-menu li.current-menu-item {
+    background-image: url("./images/white-border-h-4px.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+  }
+}
+
+#main,
+#content article .entry-title a {
+  color: #36393E;
+}
+
+#content article .entry-title {
+  border-bottom-color: #36393E;
+}
+
+#content .paging-navigation {
+  background-color: transparent;
+}
+
+#comments .comment-awaiting-moderation,
+#commentform .form-allowed-tags,
+#commentform .form-allowed-tags * {
+  color: #6A7079;
+}
+
+#main a,
+#secondary a,
+#comments .comment-author .fn,
+#commentform .required {
+  color: #7A5131;
+}
+
+#navbar .nav-menu li:hover a,
+#secondary .widget_calendar td > a:hover,
+#tertiary .widget_calendar td > a:hover {
+  background-color: #684529;
+}
+
+#main a:hover,
+#secondary a:hover {
+  color: #684529;
+}
+
+#main {
+  background-image: url("./images/white-90.png");
+}
+
+#secondary {
+  background-color: transparent;
+  background-image: url("./images/black-75.png");
+}
+
+#tertiary .widget {
+  background-color: transparent;
+  background-image: url("./images/white-70.png");
+}
+
+#tertiary .widget_calendar tbody td {
+  background-color: transparent;
+  background-image: url("./images/white-62.png");
+}
+
+#tertiary .widget iframe[src^="//www.facebook.com/plugins/likebox.php"] {
+  background-color: #fff;
+}
+
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  background: #7A5131; /* 古いブラウザ用 */
+  background: -webkit-linear-gradient(top, #7a5131 0%, #624127 100%); /* Chrome 10+, Safari 5.1+ */
+  background:   linear-gradient(to bottom, #7a5131 0%, #624127 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7a5131', endColorstr='#624127', GradientType=0); /* IE6-9 */
+  border-bottom-color: #0d0905;
+}
+
+button:hover, button:focus,
+input[type="submit"]:hover, input[type="submit"]:focus,
+input[type="button"]:hover, input[type="button"]:focus,
+input[type="reset"]:hover, input[type="reset"]:focus {
+  background: #7a5131; /* 古いブラウザ用 */
+  background: -webkit-linear-gradient(top, #624127 0%, #7A5131 100%); /* Chrome 10+, Safari 5.1+ */
+  background:   linear-gradient(to bottom, #624127 0%, #7A5131 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#624127', endColorstr='#7A5131', GradientType=0); /* IE6-9 */
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+  background: #7A5131; /* 古いブラウザ用 */
+  background: -webkit-linear-gradient(top, #624127 0%, #7a5131 100%); /* Chrome 10+, Safari 5.1+ */
+  background:   linear-gradient(to bottom, #624127 0%, #7a5131 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#624127', endColorstr='#7a5131', GradientType=0); /* IE6-9 */
+  border-top-color: #0d0905;
+}
+
+#masthead .site-title {
+  padding-top: 104px;
+}
+
+#main {
+  padding-bottom: 20px;
+}
+
+#content article .sharing-ui {
+  float: right;
+}
+
+#content article .sharing-ui > iframe {
+  width: 96px !important;
+  vertical-align: text-top;
+}
+
+@media (max-width: 359px) {
+  #content article .sharing-ui {
+    float: none;
+    margin-top: .75em;
+    text-align: center;
+  }
+}
+
+#commentform [for="author"],
+#commentform [for="email"],
+#commentform [for="url"],
+#commentform [for="comment"] {
+  width: 136px;
+}
+
+@media (max-width: 643px) {
+  #tertiary .widget {
+    margin-bottom: 1px;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  #tertiary .widget:last-child {
+    margin-bottom: 24px;
+  }
+}
+
+#tertiary .widget iframe[src^="//www.facebook.com/plugins/likebox.php"] {
+  width: 100% !important;
+}
+
+@media (min-width: 360px) {
+  #tertiary .widget iframe.twitter-timeline {
+    width: 100% !important;
+  }
+}
+
+#tertiary .widget a.banner img {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 643px) {
+  #navbar .toggled-on .nav-menu {
+    border-top: 1px solid #7A5131;
+  }
+}
+
+#main {
+  position: relative;
+}
+
+#main:before {
+  content: "\a0";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 39px;
+  background-image: url("./images/white-62.png");s
+}
+
+
+
+
+#content article.attachment .entry-title,
+#content article.format-link .entry-title {
+  border-bottom: none;
+}
+
+
+#content .entry-thumbnail{
+  margin-top: 20px;
+  }
+
+#secondary {
+  position: relative;
+}
+
+#secondary {
+  margin-top: 63px; /* 39px + 24px */
+  margin-bottom: 15px;
+}
+
+#secondary:before,
+#secondary:after {
+  content: "\a0";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+#secondary:before {
+  top: -24px;
+  height: 24px;
+  background-image: url("./images/dim-gray-62.png");*/
+}
+
+#secondary:after {
+  top: 100%;
+  height: 15px;
+  background-image: url("./images/black-38.png");
+}
+
+#tertiary .widget {
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  
+  text-shadow: 0 0 4px #fff;
+  
+  -moz-box-shadow:
+      0 2px 5px 0 rgba(0, 0, 0, .25),
+      inset 0 0 32px #fff;
+  -webkit-box-shadow:
+      0 2px 5px 0 rgba(0, 0, 0, .25),
+      inset 0 0 32px #fff;
+  box-shadow:
+      0 2px 5px 0 rgba(0, 0, 0, .25),
+      inset 0 0 32px #fff;
+}
+
+#tertiary .widget_calendar:first-child {
+  text-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#masthead {
+  background-position: top center;
+}
+
+#colophon {
+  margin-top: 0 !important;
+}
+
+#page {
+  border: none;
+}
+
+#masthead .site-title:hover,
+#content article .entry-title a:hover,
+#secondary .widget_calendar td > a,
+#tertiary .widget_calendar td > a {
+  text-decoration: none;
+}
+
+#navbar .search-form [type="search"],
+#navbar .search-form [type="text"] {
+  background-image: url("./images/search-icon-white.png");
+}
+
+#navbar .search-form [type="search"]:focus,
+#navbar .search-form [type="text"]:focus {
+  background-image: url("./images/search-icon-brown.png");
+}
+
+#navbar .search-form { /* Android のバグフィックス */
+  text-align: right;
+}
+
+@media print,
+    (-o-min-device-pixel-ratio: 5/4),
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 120dpi) {
+  
+  #navbar .search-form [type="search"],
+  #navbar .search-form [type="text"] {
+    background-image: url("./images/search-icon-white-2x.png");
+  }
+}
+
+.error404 #content .page-title:before {
+  color: #fff;
+  z-index: -1;
+  opacity: .38;
+}
